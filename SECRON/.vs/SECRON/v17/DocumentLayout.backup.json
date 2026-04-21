@@ -1,6 +1,5 @@
 {
   "Version": 1,
-<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\Administrador\\Documents\\GitHub\\SECRON\\SECRON\\",
   "Documents": [
     {
@@ -10,10 +9,6 @@
       "AbsoluteMoniker": "D:0:0:{278C2313-41C1-4EE8-AC34-543B46BFB9CE}|SECRON\\SECRON.csproj|c:\\users\\administrador\\documents\\github\\secron\\secron\\secron\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
     }
   ],
-=======
-  "WorkspaceRootPath": "C:\\Users\\Jose_Torres\\Documents\\GitHub\\SECRON\\SECRON\\",
-  "Documents": [],
->>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
