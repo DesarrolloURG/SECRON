@@ -190,3 +190,7 @@ C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.cspr
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.exe
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.pdb
 >>>>>>> Stashed changes
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\bin\Debug\SECRON.exe.manifest
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\bin\Debug\SECRON.application
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.exe.manifest
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.application
