@@ -195,3 +195,4 @@ C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\bin\Debug\SECRON.appl
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.exe.manifest
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.application
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_Checks_Reports_Filters_Date.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_Checks_Reports_Filters_Date.resources
