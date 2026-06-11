@@ -33,6 +33,7 @@
             this.BtnEmployeesInformation = new System.Windows.Forms.Button();
             this.BtnEmployeesManagment = new System.Windows.Forms.Button();
             this.PanelUsers = new System.Windows.Forms.Panel();
+            this.Btn_ITSM_Technology = new System.Windows.Forms.Button();
             this.BtnUsersRolesPermisos = new System.Windows.Forms.Button();
             this.BtnUsersManagment = new System.Windows.Forms.Button();
             this.PanelSuppliers = new System.Windows.Forms.Panel();
@@ -81,7 +82,7 @@
             this.BtnLocationsManagment = new System.Windows.Forms.Button();
             this.PanelStaticItems = new System.Windows.Forms.Panel();
             this.BtnStaticItemsReports = new System.Windows.Forms.Button();
-            this.BtnStaticItemsDepreciation = new System.Windows.Forms.Button();
+            this.BtnStaticItemsCategories = new System.Windows.Forms.Button();
             this.BtnStaticItemsMaintenance = new System.Windows.Forms.Button();
             this.BtnStaticItemsMovementsController = new System.Windows.Forms.Button();
             this.BtnStaticItemsResponsabilityLetter = new System.Windows.Forms.Button();
@@ -243,13 +244,34 @@
             // PanelUsers
             // 
             this.PanelUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(224)))), ((int)(((byte)(222)))));
+            this.PanelUsers.Controls.Add(this.Btn_ITSM_Technology);
             this.PanelUsers.Controls.Add(this.BtnUsersRolesPermisos);
             this.PanelUsers.Controls.Add(this.BtnUsersManagment);
-            this.PanelUsers.Location = new System.Drawing.Point(220, 1);
+            this.PanelUsers.Location = new System.Drawing.Point(220, 250);
             this.PanelUsers.Name = "PanelUsers";
-            this.PanelUsers.Size = new System.Drawing.Size(300, 80);
+            this.PanelUsers.Size = new System.Drawing.Size(300, 120);
             this.PanelUsers.TabIndex = 4;
             this.PanelUsers.Visible = false;
+            // 
+            // Btn_ITSM_Technology
+            // 
+            this.Btn_ITSM_Technology.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(224)))), ((int)(((byte)(222)))));
+            this.Btn_ITSM_Technology.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_ITSM_Technology.FlatAppearance.BorderSize = 0;
+            this.Btn_ITSM_Technology.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(143)))), ((int)(((byte)(109)))));
+            this.Btn_ITSM_Technology.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ITSM_Technology.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.Btn_ITSM_Technology.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Btn_ITSM_Technology.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_ITSM_Technology.Location = new System.Drawing.Point(0, 70);
+            this.Btn_ITSM_Technology.Margin = new System.Windows.Forms.Padding(0);
+            this.Btn_ITSM_Technology.Name = "Btn_ITSM_Technology";
+            this.Btn_ITSM_Technology.Size = new System.Drawing.Size(300, 35);
+            this.Btn_ITSM_Technology.TabIndex = 47;
+            this.Btn_ITSM_Technology.Text = "EQUIPOS DE TECNOLOGÍA";
+            this.Btn_ITSM_Technology.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_ITSM_Technology.UseVisualStyleBackColor = false;
+            this.Btn_ITSM_Technology.Click += new System.EventHandler(this.Btn_ITSM_Technology_Click);
             // 
             // BtnUsersRolesPermisos
             // 
@@ -1111,7 +1133,7 @@
             // 
             this.PanelStaticItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(224)))), ((int)(((byte)(222)))));
             this.PanelStaticItems.Controls.Add(this.BtnStaticItemsReports);
-            this.PanelStaticItems.Controls.Add(this.BtnStaticItemsDepreciation);
+            this.PanelStaticItems.Controls.Add(this.BtnStaticItemsCategories);
             this.PanelStaticItems.Controls.Add(this.BtnStaticItemsMaintenance);
             this.PanelStaticItems.Controls.Add(this.BtnStaticItemsMovementsController);
             this.PanelStaticItems.Controls.Add(this.BtnStaticItemsResponsabilityLetter);
@@ -1142,25 +1164,25 @@
             this.BtnStaticItemsReports.UseVisualStyleBackColor = false;
             this.BtnStaticItemsReports.Click += new System.EventHandler(this.BtnStaticItemsReports_Click);
             // 
-            // BtnStaticItemsDepreciation
+            // BtnStaticItemsCategories
             // 
-            this.BtnStaticItemsDepreciation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(224)))), ((int)(((byte)(222)))));
-            this.BtnStaticItemsDepreciation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnStaticItemsDepreciation.FlatAppearance.BorderSize = 0;
-            this.BtnStaticItemsDepreciation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(143)))), ((int)(((byte)(109)))));
-            this.BtnStaticItemsDepreciation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStaticItemsDepreciation.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.BtnStaticItemsDepreciation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnStaticItemsDepreciation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnStaticItemsDepreciation.Location = new System.Drawing.Point(0, 140);
-            this.BtnStaticItemsDepreciation.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnStaticItemsDepreciation.Name = "BtnStaticItemsDepreciation";
-            this.BtnStaticItemsDepreciation.Size = new System.Drawing.Size(300, 35);
-            this.BtnStaticItemsDepreciation.TabIndex = 48;
-            this.BtnStaticItemsDepreciation.Text = "DEPRECIACIÓN Y VALUACIÓN";
-            this.BtnStaticItemsDepreciation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnStaticItemsDepreciation.UseVisualStyleBackColor = false;
-            this.BtnStaticItemsDepreciation.Click += new System.EventHandler(this.BtnStaticItemsDepreciation_Click);
+            this.BtnStaticItemsCategories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(224)))), ((int)(((byte)(222)))));
+            this.BtnStaticItemsCategories.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnStaticItemsCategories.FlatAppearance.BorderSize = 0;
+            this.BtnStaticItemsCategories.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(143)))), ((int)(((byte)(109)))));
+            this.BtnStaticItemsCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnStaticItemsCategories.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.BtnStaticItemsCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnStaticItemsCategories.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnStaticItemsCategories.Location = new System.Drawing.Point(0, 140);
+            this.BtnStaticItemsCategories.Margin = new System.Windows.Forms.Padding(0);
+            this.BtnStaticItemsCategories.Name = "BtnStaticItemsCategories";
+            this.BtnStaticItemsCategories.Size = new System.Drawing.Size(300, 35);
+            this.BtnStaticItemsCategories.TabIndex = 48;
+            this.BtnStaticItemsCategories.Text = "CATEGORÍAS DE ACTIVOS";
+            this.BtnStaticItemsCategories.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnStaticItemsCategories.UseVisualStyleBackColor = false;
+            this.BtnStaticItemsCategories.Click += new System.EventHandler(this.BtnStaticItemsCategories_Click);
             // 
             // BtnStaticItemsMaintenance
             // 
@@ -2650,7 +2672,7 @@
         private System.Windows.Forms.Button BtnLocationsManagment;
         private System.Windows.Forms.Panel PanelStaticItems;
         private System.Windows.Forms.Button BtnStaticItemsReports;
-        private System.Windows.Forms.Button BtnStaticItemsDepreciation;
+        private System.Windows.Forms.Button BtnStaticItemsCategories;
         private System.Windows.Forms.Button BtnStaticItemsMaintenance;
         private System.Windows.Forms.Button BtnStaticItemsMovementsController;
         private System.Windows.Forms.Button BtnStaticItemsResponsabilityLetter;
@@ -2733,5 +2755,6 @@
         private System.Windows.Forms.Panel PanelWarehouses;
         private System.Windows.Forms.Button BtnWarehouse_Reports;
         private System.Windows.Forms.Button BtnWarehouse_Managment;
+        private System.Windows.Forms.Button Btn_ITSM_Technology;
     }
 }
