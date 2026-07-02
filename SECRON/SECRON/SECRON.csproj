@@ -24,7 +24,7 @@
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>http://localhost/</InstallUrl>
-    <MinimumRequiredVersion>2.0.0.9</MinimumRequiredVersion>
+    <MinimumRequiredVersion>2.0.0.10</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <TrustUrlParameters>true</TrustUrlParameters>
@@ -130,12 +130,14 @@
     <Compile Include="Controllers\Ctrl_FixedAssetTransferStatus.cs" />
     <Compile Include="Controllers\Ctrl_FixedAssetTransferStatusTransitions.cs" />
     <Compile Include="Controllers\Ctrl_ItemCategories.cs" />
+    <Compile Include="Controllers\Ctrl_ItemMovement.cs" />
     <Compile Include="Controllers\Ctrl_ItemMovementDetails.cs" />
     <Compile Include="Controllers\Ctrl_ItemMovementMaster.cs" />
     <Compile Include="Controllers\Ctrl_Items.cs" />
     <Compile Include="Controllers\Ctrl_ItemStockByLocation.cs" />
     <Compile Include="Controllers\Ctrl_ItemStockTemplates.cs" />
     <Compile Include="Controllers\Ctrl_ItemSubCategories.cs" />
+    <Compile Include="Controllers\Ctrl_ItemWarehouseStock.cs" />
     <Compile Include="Controllers\Ctrl_LocationCategories.cs" />
     <Compile Include="Controllers\Ctrl_Locations.cs" />
     <Compile Include="Controllers\Ctrl_MeasurementUnits.cs" />
@@ -161,6 +163,10 @@
     <Compile Include="Controllers\Ctrl_UserPermissions.cs" />
     <Compile Include="Controllers\Ctrl_Users.cs" />
     <Compile Include="Controllers\Ctrl_UserStatus.cs" />
+    <Compile Include="Controllers\Ctrl_WarehouseDispatch.cs" />
+    <Compile Include="Controllers\Ctrl_WarehouseManager.cs" />
+    <Compile Include="Controllers\Ctrl_WarehouseManagerPermissions.cs" />
+    <Compile Include="Controllers\Ctrl_WarehouseReorderNotification.cs" />
     <Compile Include="Controllers\Ctrl_Warehouses.cs" />
     <Compile Include="Models\Mdl_AccountingEntryChecks.cs" />
     <Compile Include="Models\Mdl_AccountingEntryDetails.cs" />
@@ -190,12 +196,14 @@
     <Compile Include="Models\Mdl_FixedAssetTransferStatus.cs" />
     <Compile Include="Models\Mdl_FixedAssetTransferStatusTransition.cs" />
     <Compile Include="Models\Mdl_ItemCategories.cs" />
+    <Compile Include="Models\Mdl_ItemMovementDetailInput.cs" />
     <Compile Include="Models\Mdl_ItemMovementDetails.cs" />
     <Compile Include="Models\Mdl_ItemMovementMaster.cs" />
     <Compile Include="Models\Mdl_Items.cs" />
     <Compile Include="Models\Mdl_ItemStockByLocation.cs" />
     <Compile Include="Models\Mdl_ItemStockTemplates.cs" />
     <Compile Include="Models\Mdl_ItemSubCategories.cs" />
+    <Compile Include="Models\Mdl_ItemWarehouseStock.cs" />
     <Compile Include="Models\Mdl_LocationCategories.cs" />
     <Compile Include="Models\Mdl_LocationCategory.cs" />
     <Compile Include="Models\Mdl_Locations.cs" />
@@ -226,6 +234,9 @@
     <Compile Include="Models\Mdl_Users.cs" />
     <Compile Include="Models\Mdl_UserStatus.cs" />
     <Compile Include="Models\Mdl_Warehouse.cs" />
+    <Compile Include="Models\Mdl_WarehouseManager.cs" />
+    <Compile Include="Models\Mdl_WarehouseManagerPermission.cs" />
+    <Compile Include="Models\Mdl_WarehousePermission.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -453,6 +464,12 @@
     <Compile Include="Views\Frm_KARDEX_CatalogLocationsCategories_Templates.Designer.cs">
       <DependentUpon>Frm_KARDEX_CatalogLocationsCategories_Templates.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Frm_KARDEX_ImportItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_ImportItems.Designer.cs">
+      <DependentUpon>Frm_KARDEX_ImportItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Frm_KARDEX_ItemsManagment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -477,6 +494,12 @@
     <Compile Include="Views\Frm_KARDEX_SearchCategory.Designer.cs">
       <DependentUpon>Frm_KARDEX_SearchCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Frm_KARDEX_SearchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_SearchEmployee.Designer.cs">
+      <DependentUpon>Frm_KARDEX_SearchEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Frm_KARDEX_SearchMeasurementUnits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -488,6 +511,42 @@
     </Compile>
     <Compile Include="Views\Frm_KARDEX_SearchSubCategory.Designer.cs">
       <DependentUpon>Frm_KARDEX_SearchSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_SearchSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_SearchSupplier.Designer.cs">
+      <DependentUpon>Frm_KARDEX_SearchSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_SearchWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_SearchWarehouse.Designer.cs">
+      <DependentUpon>Frm_KARDEX_SearchWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehouseDispatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehouseDispatch.Designer.cs">
+      <DependentUpon>Frm_KARDEX_WarehouseDispatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehouseInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehouseInventory.Designer.cs">
+      <DependentUpon>Frm_KARDEX_WarehouseInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehouseInventory_Ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehouseInventory_Ingreso.Designer.cs">
+      <DependentUpon>Frm_KARDEX_WarehouseInventory_Ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehousePermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_KARDEX_WarehousePermissions.Designer.cs">
+      <DependentUpon>Frm_KARDEX_WarehousePermissions.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Frm_Locations_Managment.cs">
       <SubType>Form</SubType>
@@ -568,18 +627,6 @@
     </Compile>
     <Compile Include="Views\Frm_Transfers_SearchCuenta.Designer.cs">
       <DependentUpon>Frm_Transfers_SearchCuenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Frm_Users_Managment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Frm_Users_Managment.Designer.cs">
-      <DependentUpon>Frm_Users_Managment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Frm_Users_RolesPermissions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Frm_Users_RolesPermissions.Designer.cs">
-      <DependentUpon>Frm_Users_RolesPermissions.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\Frm_Accounts_Managment.resx">
       <DependentUpon>Frm_Accounts_Managment.cs</DependentUpon>
@@ -692,6 +739,9 @@
     <EmbeddedResource Include="Views\Frm_KARDEX_CatalogLocationsCategories_Templates.resx">
       <DependentUpon>Frm_KARDEX_CatalogLocationsCategories_Templates.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_ImportItems.resx">
+      <DependentUpon>Frm_KARDEX_ImportItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_KARDEX_ItemsManagment.resx">
       <DependentUpon>Frm_KARDEX_ItemsManagment.cs</DependentUpon>
     </EmbeddedResource>
@@ -704,11 +754,32 @@
     <EmbeddedResource Include="Views\Frm_KARDEX_SearchCategory.resx">
       <DependentUpon>Frm_KARDEX_SearchCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_SearchEmployee.resx">
+      <DependentUpon>Frm_KARDEX_SearchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_KARDEX_SearchMeasurementUnits.resx">
       <DependentUpon>Frm_KARDEX_SearchMeasurementUnits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_KARDEX_SearchSubCategory.resx">
       <DependentUpon>Frm_KARDEX_SearchSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_SearchSupplier.resx">
+      <DependentUpon>Frm_KARDEX_SearchSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_SearchWarehouse.resx">
+      <DependentUpon>Frm_KARDEX_SearchWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_WarehouseDispatch.resx">
+      <DependentUpon>Frm_KARDEX_WarehouseDispatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_WarehouseInventory.resx">
+      <DependentUpon>Frm_KARDEX_WarehouseInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_WarehouseInventory_Ingreso.resx">
+      <DependentUpon>Frm_KARDEX_WarehouseInventory_Ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_KARDEX_WarehousePermissions.resx">
+      <DependentUpon>Frm_KARDEX_WarehousePermissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_Locations_Managment.resx">
       <DependentUpon>Frm_Locations_Managment.cs</DependentUpon>
@@ -753,12 +824,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_Transfers_SearchCuenta.resx">
       <DependentUpon>Frm_Transfers_SearchCuenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Frm_Users_Managment.resx">
-      <DependentUpon>Frm_Users_Managment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Frm_Users_RolesPermissions.resx">
-      <DependentUpon>Frm_Users_RolesPermissions.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -880,6 +945,10 @@
     <None Include="Img\MembretadoPiePagina.png" />
     <None Include="Img\SelloCoordinacion_Black.png" />
     <None Include="Img\trash25x25.png" />
+    <None Include="Img\UploadFileBlack20x20.png" />
+    <None Include="Img\UploadFileBlack25x25.png" />
+    <None Include="Img\UploadFileWhite20x20.png" />
+    <None Include="Img\UploadFileWhite25x25.png" />
     <Content Include="SECRON-Logotipo.ico" />
   </ItemGroup>
   <ItemGroup>
