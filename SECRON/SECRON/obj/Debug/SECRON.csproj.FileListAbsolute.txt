@@ -242,3 +242,11 @@ C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.View
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehouseDispatch.resources
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_SearchEmployee.resources
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_SearchWarehouse.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_ImportItems.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_SearchEmployee.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_SearchSupplier.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_SearchWarehouse.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehouseDispatch.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehouseInventory.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehouseInventory_Ingreso.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehousePermissions.resources
