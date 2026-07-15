@@ -24,7 +24,7 @@
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>http://localhost/</InstallUrl>
-    <MinimumRequiredVersion>2.0.0.11</MinimumRequiredVersion>
+    <MinimumRequiredVersion>2.0.0.12</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <TrustUrlParameters>true</TrustUrlParameters>
@@ -119,6 +119,7 @@
     <Compile Include="Controllers\Ctrl_CheckControl.cs" />
     <Compile Include="Controllers\Ctrl_Checks.cs" />
     <Compile Include="Controllers\Ctrl_CheckStatus.cs" />
+    <Compile Include="Controllers\Ctrl_Coordinators.cs" />
     <Compile Include="Controllers\Ctrl_Departments.cs" />
     <Compile Include="Controllers\Ctrl_EmployeeStatus.cs" />
     <Compile Include="Controllers\Ctrl_FixedAssetAttributeDefinitions.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="Controllers\Ctrl_ItemWarehouseStock.cs" />
     <Compile Include="Controllers\Ctrl_LocationCategories.cs" />
     <Compile Include="Controllers\Ctrl_Locations.cs" />
+    <Compile Include="Controllers\Ctrl_LocationStaffAssignments.cs" />
     <Compile Include="Controllers\Ctrl_MeasurementUnits.cs" />
     <Compile Include="Controllers\Ctrl_MovementTypes.cs" />
     <Compile Include="Controllers\Ctrl_Permissions.cs" />
@@ -181,6 +183,7 @@
     <Compile Include="Models\Mdl_CheckControl.cs" />
     <Compile Include="Models\Mdl_Checks.cs" />
     <Compile Include="Models\Mdl_CheckStatus.cs" />
+    <Compile Include="Models\Mdl_Coordinators.cs" />
     <Compile Include="Models\Mdl_Country.cs" />
     <Compile Include="Models\Mdl_Department.cs" />
     <Compile Include="Models\Mdl_Departments.cs" />
@@ -207,6 +210,8 @@
     <Compile Include="Models\Mdl_LocationCategories.cs" />
     <Compile Include="Models\Mdl_LocationCategory.cs" />
     <Compile Include="Models\Mdl_Locations.cs" />
+    <Compile Include="Models\Mdl_LocationStaffAssignments.cs" />
+    <Compile Include="Models\Mdl_LocationStaffRoles.cs" />
     <Compile Include="Models\Mdl_MeasurementUnits.cs" />
     <Compile Include="Models\Mdl_MovementTypes.cs" />
     <Compile Include="Models\Mdl_Municipality.cs" />
@@ -237,6 +242,7 @@
     <Compile Include="Models\Mdl_WarehouseManager.cs" />
     <Compile Include="Models\Mdl_WarehouseManagerPermission.cs" />
     <Compile Include="Models\Mdl_WarehousePermission.cs" />
+    <Compile Include="Models\Mdl_WarehouseWithLocation.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -325,12 +331,6 @@
     </Compile>
     <Compile Include="Views\Frm_ControlCenter_MDI.Designer.cs">
       <DependentUpon>Frm_ControlCenter_MDI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Frm_Employees_Managment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Frm_Employees_Managment.Designer.cs">
-      <DependentUpon>Frm_Employees_Managment.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Frm_FA_AssetAttributeValues.cs">
       <SubType>Form</SubType>
@@ -548,11 +548,41 @@
     <Compile Include="Views\Frm_KARDEX_WarehousePermissions.Designer.cs">
       <DependentUpon>Frm_KARDEX_WarehousePermissions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Frm_LocationStaffAssignments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_LocationStaffAssignments.Designer.cs">
+      <DependentUpon>Frm_LocationStaffAssignments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_LocationStaffAssignments_SearchUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_LocationStaffAssignments_SearchUsers.Designer.cs">
+      <DependentUpon>Frm_LocationStaffAssignments_SearchUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Frm_Locations_Managment.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Frm_Locations_Managment.Designer.cs">
       <DependentUpon>Frm_Locations_Managment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_RRHH_Coordinator_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_RRHH_Coordinator_File.Designer.cs">
+      <DependentUpon>Frm_RRHH_Coordinator_File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_RRHH_Employee_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_RRHH_Employee_File.Designer.cs">
+      <DependentUpon>Frm_RRHH_Employee_File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_RRHH_Teacher_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_RRHH_Teacher_File.Designer.cs">
+      <DependentUpon>Frm_RRHH_Teacher_File.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Frm_Security_ForgetPassword.cs">
       <SubType>Form</SubType>
@@ -598,12 +628,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Frm_Teachers_Managment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Frm_Teachers_Managment.Designer.cs">
-      <DependentUpon>Frm_Teachers_Managment.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Frm_Transfers_Managment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -627,6 +651,12 @@
     </Compile>
     <Compile Include="Views\Frm_Transfers_SearchCuenta.Designer.cs">
       <DependentUpon>Frm_Transfers_SearchCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frm_Warehouse_Managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Frm_Warehouse_Managment.Designer.cs">
+      <DependentUpon>Frm_Warehouse_Managment.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\Frm_Accounts_Managment.resx">
       <DependentUpon>Frm_Accounts_Managment.cs</DependentUpon>
@@ -669,9 +699,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_ControlCenter_MDI.resx">
       <DependentUpon>Frm_ControlCenter_MDI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Frm_Employees_Managment.resx">
-      <DependentUpon>Frm_Employees_Managment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_FA_AssetAttributeValues.resx">
       <DependentUpon>Frm_FA_AssetAttributeValues.cs</DependentUpon>
@@ -781,8 +808,23 @@
     <EmbeddedResource Include="Views\Frm_KARDEX_WarehousePermissions.resx">
       <DependentUpon>Frm_KARDEX_WarehousePermissions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_LocationStaffAssignments.resx">
+      <DependentUpon>Frm_LocationStaffAssignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_LocationStaffAssignments_SearchUsers.resx">
+      <DependentUpon>Frm_LocationStaffAssignments_SearchUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_Locations_Managment.resx">
       <DependentUpon>Frm_Locations_Managment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_RRHH_Coordinator_File.resx">
+      <DependentUpon>Frm_RRHH_Coordinator_File.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_RRHH_Employee_File.resx">
+      <DependentUpon>Frm_RRHH_Employee_File.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_RRHH_Teacher_File.resx">
+      <DependentUpon>Frm_RRHH_Teacher_File.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_Security_ForgetPassword.resx">
       <DependentUpon>Frm_Security_ForgetPassword.cs</DependentUpon>
@@ -810,9 +852,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Frm_Teachers_Managment.resx">
-      <DependentUpon>Frm_Teachers_Managment.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_Transfers_Managment.resx">
       <DependentUpon>Frm_Transfers_Managment.cs</DependentUpon>
     </EmbeddedResource>
@@ -824,6 +863,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Frm_Transfers_SearchCuenta.resx">
       <DependentUpon>Frm_Transfers_SearchCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Frm_Warehouse_Managment.resx">
+      <DependentUpon>Frm_Warehouse_Managment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

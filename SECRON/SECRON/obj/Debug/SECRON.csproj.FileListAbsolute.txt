@@ -250,3 +250,9 @@ C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Vi
 C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehouseInventory.resources
 C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehouseInventory_Ingreso.resources
 C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_KARDEX_WarehousePermissions.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_LocationStaffAssignments.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Coordinator_File.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Employee_File.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Teacher_File.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_Warehouse_Managment.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_LocationStaffAssignments_SearchUsers.resources
