@@ -256,3 +256,8 @@ C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.View
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Teacher_File.resources
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_Warehouse_Managment.resources
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_LocationStaffAssignments_SearchUsers.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_Security_TwoFactorSetup.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_Security_TwoFactorVerify.resources
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\bin\Debug\Otp.NET.dll
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\bin\Debug\QRCoder.dll
+C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\bin\Debug\QRCoder.xml
