@@ -1025,9 +1025,9 @@ namespace SECRON.Views
                     {
                         try
                         {
-                            //string carpetaDestino = $@"\\Uregional\Shared$\SECRONDEV\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
+                            string carpetaDestino = $@"\\Uregional\Shared$\SECRONDEV\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
                             //string carpetaDestino = $@"\\Uregional\Shared$\SECRONQA\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
-                            string carpetaDestino = $@"\\Uregional\Shared$\SECRON\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
+                            //string carpetaDestino = $@"\\Uregional\Shared$\SECRON\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
 
                             if (!System.IO.Directory.Exists(carpetaDestino))
                                 System.IO.Directory.CreateDirectory(carpetaDestino);
@@ -1881,5 +1881,23 @@ namespace SECRON.Views
         }
 
         #endregion SistemaDePermisos
+        #region ContratosTemporal
+        private void Btn_Contratos_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (Frm_RRHH_Teacher_TempContratos frmContratos = new Frm_RRHH_Teacher_TempContratos())
+                {
+                    frmContratos.UserData = UserData;
+                    frmContratos.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR AL ABRIR EL FORMULARIO DE CONTRATOS: " + ex.Message,
+                              "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        #endregion ContratosTemporal
     }
 }
