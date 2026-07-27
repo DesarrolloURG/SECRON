@@ -274,3 +274,5 @@ C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Vi
 C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_Warehouse_Managment.resources
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Teachers_TempGenerarContratos.resources
 C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Teacher_TempContratos.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Teachers_TempGenerarContratos.resources
+C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Teacher_TempContratos.resources
