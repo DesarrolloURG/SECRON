@@ -1032,7 +1032,7 @@ namespace SECRON.Views
         {
             try
             {
-                MessageBox.Show(SECRON.Utils.Cls_EmailEncryption.DiagnosticoRutaLlave());
+                //MessageBox.Show(SECRON.Utils.Cls_EmailEncryption.DiagnosticoRutaLlave());
 
                 try
                 {
@@ -1052,7 +1052,7 @@ namespace SECRON.Views
                         diagnostico += $"\nERROR AL DESCIFRAR: {exDecrypt.Message}";
                     }
 
-                    MessageBox.Show(diagnostico);
+                    //MessageBox.Show(diagnostico);
                 }
                 catch (Exception exDiag)
                 {
