@@ -157,6 +157,7 @@
     <Compile Include="Controllers\Ctrl_MovementTypes.cs" />
     <Compile Include="Controllers\Ctrl_Parameters.cs" />
     <Compile Include="Controllers\Ctrl_Permissions.cs" />
+    <Compile Include="Controllers\Ctrl_Portal_Contratos_Vigencia.cs" />
     <Compile Include="Controllers\Ctrl_Positions.cs" />
     <Compile Include="Controllers\Ctrl_PurchaseOrderDetails.cs" />
     <Compile Include="Controllers\Ctrl_PurchaseOrderMaster.cs" />
@@ -230,6 +231,7 @@
     <Compile Include="Models\Mdl_MovementTypes.cs" />
     <Compile Include="Models\Mdl_Municipality.cs" />
     <Compile Include="Models\Mdl_Permissions.cs" />
+    <Compile Include="Models\Mdl_Portal_Contratos_Vigencia.cs" />
     <Compile Include="Models\Mdl_Positions.cs" />
     <Compile Include="Models\Mdl_PurchaseOrderDetails.cs" />
     <Compile Include="Models\Mdl_PurchaseOrderMaster.cs" />
@@ -263,6 +265,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\Cls_ActivityMessageFilter.cs" />
+    <Compile Include="Utils\Cls_EmailConfigCache.cs" />
+    <Compile Include="Utils\Cls_EmailEncryption.cs" />
+    <Compile Include="Utils\Cls_EmailService.cs" />
     <Compile Include="Views\Frm_Accounts_Managment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -918,6 +923,9 @@
     <EmbeddedResource Include="Views\Frm_Warehouse_Managment.resx">
       <DependentUpon>Frm_Warehouse_Managment.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="secron.key">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
