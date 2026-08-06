@@ -1091,9 +1091,9 @@ namespace SECRON.Views
                     {
                         try
                         {
-                            string carpetaDestino = $@"\\Uregional\Shared$\SECRONDEV\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
+                            //string carpetaDestino = $@"\\Uregional\Shared$\SECRONDEV\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
                             //string carpetaDestino = $@"\\Uregional\Shared$\SECRONQA\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
-                            //string carpetaDestino = $@"\\Uregional\Shared$\SECRON\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
+                            string carpetaDestino = $@"\\Uregional\Shared$\SECRON\RECURSOS HUMANOS\DOCENCIA\DOCENTES\{teacherId}\";
 
                             if (!System.IO.Directory.Exists(carpetaDestino))
                                 System.IO.Directory.CreateDirectory(carpetaDestino);
