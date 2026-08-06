@@ -205,4 +205,3 @@ C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.ap
 C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.csproj.Up2Date
 C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.exe
 C:\Users\Administrador\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.pdb
-C:\Users\Jose_Torres\Documents\GitHub\SECRON\SECRON\SECRON\obj\Debug\SECRON.Views.Frm_RRHH_Teacher_ContractPeriod.resources
